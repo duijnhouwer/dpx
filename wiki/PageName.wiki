@@ -1,14 +1,14 @@
-#summary Collection of DPX hint and tips.
+#summary Linux: install `libglut.so.3`.
 
-==Hint, Tips, and Troubleshooting==
+= Problem =
 
-==General==
-Empty
+Matlab produces the following error when trying to run a DPX experiment:
+`libglut.so.3: cannot open shared object file: No such file or directory`
 
-==Linux==
-[2014-10-20] On my Ubuntu 14.04 LTS install on a PC with an NVIDIA 760 GTX card, I noticed that Psychtoolbox would not run with the default video driver (X.Org X Server - Nouveau display driver). Changing this selection to the NVIDIA binary 331.38 driver (Software & Updates GUI, under the Additional Drivers tab) helped somewhat, in tha PTB would run, but a constant stream of errors complaining about Triple Buffering ensued in the Matlab Command Window, and many flips were reported missing. I finally solved the problem by downgrading the graphics driver to version 304 using  the following commands in a Linux Bash-terminal (not Matlab).
+
+= Solution =
+
+Install `libglut.so.3` using the following in a Linux-terminal and restarting Matlab
 {{{
-sudo ubuntu-drivers devices
-sudo apt-get install nvidia-304
+sudo apt-get install freeglut3
 }}}
-Note that you need administrative privileges on your computer to run these commands. A less severe downgrade (to an unknown number between 304 and 331) might work also.
