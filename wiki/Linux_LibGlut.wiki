@@ -1,10 +1,13 @@
 #summary : Linux: install "libglut.so.3".
+#labels Linux,Error,libglut.so.3,freeglut3
 
+==Problem==
 Matlab produces the following error when trying to run a DPX experiment:
 
 "libglut.so.3: cannot open shared object file: No such file or directory"
 Solution
 
+==Solution==
 Install libglut.so.3 using the following in a Linux-terminal and restart Matlab
 {{{
 sudo apt-get install freeglut3
