@@ -6,8 +6,9 @@
 Empty
 
 ==Linux==
-[2014-10-20] On my Ubuntu 14.04 LTS install on a PC with an NVIDIA 760 GTX card, I noticed that Psychtoolbox would not run with the default video driver (X.Org X Server - Nouveau display driver). Changing this selection to the NVIDIA binary 331.38 driver (Software & Updates GUI, under the Additional Drivers tab) helped somewhat, in tha PTB would run, but a constant stream of errors complaining about Triple Buffering ensued in the Matlab Command Window, and many flips were reported missing. I finally solved the problem by downgrading the graphics driver to version 304 using  the following commands in a Linux Bash-terminal (not Matlab). (Notes: You need administrative privileges on your computer to run these commands. A less severe downgrade (to an unknown number between 304 and 331) might work also)
+[2014-10-20] On my Ubuntu 14.04 LTS install on a PC with an NVIDIA 760 GTX card, I noticed that Psychtoolbox would not run with the default video driver (X.Org X Server - Nouveau display driver). Changing this selection to the NVIDIA binary 331.38 driver (Software & Updates GUI, under the Additional Drivers tab) helped somewhat, in tha PTB would run, but a constant stream of errors complaining about Triple Buffering ensued in the Matlab Command Window, and many flips were reported missing. I finally solved the problem by downgrading the graphics driver to version 304 using  the following commands in a Linux Bash-terminal (not Matlab).
 {{{
 sudo ubuntu-drivers devices
 sudo apt-get install nvidia-304
 }}}
+Note that you need administrative privileges on your computer to run these commands. A less severe downgrade (to an unknown number between 304 and 331) might work also.
