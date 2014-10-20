@@ -1,6 +1,6 @@
-#summary A not so organized but hopefully helpful help section
+#summary Collection of DPX hint and tips.
 
-=Hint, tips, and troubleshooting=
+==Hint, Tips, and Troubleshooting==
 
 ==General==
 Empty
