@@ -1,0 +1,11 @@
+#summary Replace window manager to save resources
+#labels Linux,Ubuntu,Unity2D,performance
+
+= Introduction =
+
+The default (as of writing 2014-10-20) windows manager of Ubuntu, Unity, comes in a 2D variant that requires less resources and interferes less with the Psychtoolbox. Installing it could potentially improve timing precision and reduce missed flips.
+
+
+= Details =
+
+Information on how to install and use Unity2D is found on [https://wiki.ubuntu.com/Unity2D https://wiki.ubuntu.com/Unity2D].
