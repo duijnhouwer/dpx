@@ -1,4 +1,4 @@
-#summary Linux: install `libglut.so.3`.
+#summary Linux: install "libglut.so.3".
 
 = Problem =
 
