@@ -9,7 +9,7 @@ Matlab produces the following error when trying to run a DPX experiment:
 
 = Solution =
 
-Install `libglut.so.3` using the following in a Linux-terminal and restarting Matlab
+Install `libglut.so.3` using the following in a Linux-terminal and restart Matlab
 {{{
 sudo apt-get install freeglut3
 }}}
