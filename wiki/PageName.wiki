@@ -1,4 +1,5 @@
 #summary Linux: install "libglut.so.3".
+#labels Linux,Error,libglut.so.3,freeglut3
 
 = Problem =
 
